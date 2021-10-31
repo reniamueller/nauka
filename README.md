@@ -3,3 +3,4 @@ pierwsza linia 1
 feature 1 + 1
 linia 2
 linia 3
+f4
