@@ -1,5 +1,5 @@
 GIT - system kontroli wersji - repozytorium, zasób (przesteń) na którym trzyma się kod źródłowy lub pliki.
-pobiera--> zaciąga
+pobiera --> zaciąga
 
 Repozytorium składa się z:
 	- kod źródłowy aplikacji
