@@ -11,7 +11,7 @@ Repozytorium składa się z:
 Operacje, które można wykonać na GIT'cie
 	- git clone (adres_repozytorium) - pobiera repo na dysk lokalny
 	- git pull (nazwa_branch'a) - pobiera branch'a na dysk loklany (pull branch'a A do branch'a B --> merge)
-	- git commit -m "message" - zapisuje zmiany na brahch'u w czasie (zmiany od ostaniego commit'a do aktulanego commit'a),
+	- git commit -m "message" - zapisuje zmiany na branch'u w czasie (zmiany od ostaniego commit'a do aktulanego commit'a),
 		- zawiera opis (message), 
 		- czas (data, godzina, sekunda commit'a)
 		- autora
@@ -25,4 +25,11 @@ Operacje, które można wykonać na GIT'cie
 		- merge:
 			- dodaje commit'y z brancha mojego do głównego
 			- posiada opcję "squash" - łączy commit'y w jednen zbiorczy commit
-			- tworzy nowego commit'a (sam z siebie) - nowy commit nawyza się merge
+			- tworzy nowego commit'a (sam z siebie) - nowy commit nazywa się merge
+	- git stash - posiada message (opis zawartości stash'a) - prywatna szuflada (do której mam dostęp tylko ja), może zawiarać plik lub kawałki kodu, zmiany z szufladki można umieszczać na dowolnym branch'u (unstash)
+		- stash - umieszcza kawałek kodu lub pliki w szufladce
+		- unstash - wrzuca zawartośc stash'a na branch'a
+		- stasha można usunąć
+		- stasha można podejrzeć
+		- można mieć kilka zestashowanych rzeczy
+		- stash'a nie przenosi się sam pomiędzy repozytoriami (przeniesie go jest możliwe ale tylko ręcznie)
