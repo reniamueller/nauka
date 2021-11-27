@@ -1,0 +1,28 @@
+GIT - system kontroli wersji - repozytorium, zasób (przesteń) na którym trzyma się kod źródłowy lub pliki.
+pobiera--> zaciąga
+
+Repozytorium składa się z:
+	- kod źródłowy aplikacji
+	- różne pliki (*.csv, *.xlsx, *.txt, *.docx, *.mp4, *.mp3, *.jpg, itd.)
+	- branch'y
+	- commit'ów
+	- repo lokalnego i repo zdalnego (remote)
+
+Operacje, które można wykonać na GIT'cie
+	- git clone (adres_repozytorium) - pobiera repo na dysk lokalny
+	- git pull (nazwa_branch'a) - pobiera branch'a na dysk loklany (pull branch'a A do branch'a B --> merge)
+	- git commit -m "message" - zapisuje zmiany na brahch'u w czasie (zmiany od ostaniego commit'a do aktulanego commit'a),
+		- zawiera opis (message), 
+		- czas (data, godzina, sekunda commit'a)
+		- autora
+		- informacje o zmianach w plikach
+		- numer commit'a (hash/id)
+	- git push - wypycha zmiany z repo lokalnego na repo zdalne
+	- git fetch - aktualizuje infomacje o repo zdalnym, nie aktualizuje repa lokalnego (repo lolakne dla mnie zawse jest najnowsze, nikt poza mną nie ma dostępu do tego repa - nikt poza mną go nie może zaktualizować)
+	- git checkout (nazwa_branch'a/numer commit'a) - za jego pomocą przepinamy się na konkretnego commita lub konkretnego branch'a, wtedy znajdujemy się na najnowszym commit'cie tego branch'a
+	- git merge - złączenie dwóch branch'y, wyrówanie różnic na plikach pomiędzy branch'ami np. merge'uje zmnay z głównego branch'a do siebie (czy zmiany z głównego branch'a nie wpływają na mnie); merge'uje swojego branch'a do głównego branch'a (czy moje zmiany nie wpływają na zmiany na głównym branch'u)
+		- dwa rodzaje merge'a: merge i rebase
+		- merge:
+			- dodaje commit'y z brancha mojego do głównego
+			- posiada opcję "squash" - łączy commit'y w jednen zbiorczy commit
+			- tworzy nowego commit'a (sam z siebie) - nowy commit nawyza się merge
