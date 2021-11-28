@@ -7,6 +7,6 @@ Poziomy testów:
 		- NAVI - wprowadzenie klienta i wystawienie WZW - sprawdzamy czy na WZW są dane klienta, nie sprawdzamy np. możliwości zalogowania do NAVI
     - Testy systemowe - wykonywane przez niezależnych ludzi, zajmują się zachowaniem systemu lub produktu, zawierają wymagania biznesowe, sprawdzamy realne przypadki użycia
 		- przykłady:
-			- UPC - zakłdamy użytkownika, logujemy się na niego, UPC wystawiło fakturę, klikamy w płatności, przekerowuje nas na: blumedia--> bank--> blumedia oczekuje na informację o płatności --> powrót do strony UPC, użytkownik widzi informację o zapłaconej fakturze i wylogowujemy użytkownika.
+			- UPC - zakładamy użytkownika, logujemy się na niego, UPC wystawiło fakturę, klikamy w płatności, przekierowuje nas na: blumedia--> bank--> blumedia oczekuje na informację o płatności --> powrót do strony UPC, użytkownik widzi informację o zapłaconej fakturze i wylogowujemy użytkownika.
 			- NAVI - MMN, logowanie do NAVI, przesunięcie maszyny na nowy oddział, przelogowanie na nowy oddział, przyjęcie maszyny, sprawdzenie czy zniknęła ze starego oddziału i pojawiła się na nowym
     - Testy akceptacyjne - wykonywane przez potencjonalnych użytkowników/ administratorów (zachowanie aplikacji na serwerach), skupiają się na odczuciach dotyczących systemu (nie tylko na funkcjonalności ale też na niefunkcjonalności np. położenie przycisków, ich nazwenictwo itd.). Potwierdzenie przez klienta, że to jest to czego oczekiwał.
