@@ -1,0 +1,12 @@
+Poziomy testów:
+	- Testy modułowe (jednostkowe) - najczęściej pisane przez dewelopera, wykonywane są na najmniejszych częściach aplikacji (np. funkcjach), które są niezależne, można je wykonywać w izolacji (nie musze mieć uruchomionej aplkacj, żeby wykonać test).
+	- Testy integracyjne - testujemy zależności między modułami (funkcjami), wiele moduló (funkcji) musi wykonac dodatkowe akcje, są bardziej skomplikowane niż modułowe, sprawdzmy skrajne przypadki funkcjonalności (np. otwieram 10 zkładek z UPC i w każdej chcę zapłacić za tę samą fakturę, czy pozowoli czy nie)
+		- przykłady: 
+		- wysyłanie SMS'ów z kodem do zalogowania się do banku - mam aplikację do banku (testuję funkcjonalność logowania), wpisuję użytkownia i hasło, (aplikacja bankowa łączy się aplikacją np. orange), oragne wysyła SMS na numer telefonu, ja SMS przepisuję i udaje mi się poprawnie zalogować.
+		- kalkulator: mamy 3 funkcje: wybieranie liczb, wybieranie działania, wyświetlenie wyniku, każda z nich jest osobną funkcją ale razem wykonują skomplikowane działanie nie sprawdzając reszty funkjonalności (np. zalogowanie/wylogowanie się do kalkulatora)
+		-NAVI - wprowadzenie klienta i wystawienie WZW - sprawdzamy czy na WZW są dane klienta, nie sprawdzamy np. możliwości zalogowania do NAVI
+    - Testy systemowe - wykonywane przez niezlaeźnych ludzi, zajmują się zachowaniem systemu lub produktu, zawirają wymagania biznesowe, sprawdzamy realne przypaki użycia
+		- przykłady:
+			- UPC - zakłdamy użytkownika, logujemy się na niego, UPC wystawiło fakturę, klikamy w płatności, przekerowuje nas na: blumedia--> bank--> blumedia oczekuje na informację o płatności --> powrót do strony UPC, użytkownik widzi informację o zapłaconej fakturze i wylogowujemy użytkownika.
+			- NAVI - MMN, logowanie do NAVI, przesunięcie maszyny na nowy oddział, przelogowanie na nowy oddział, przyjęcie maszyny, sprawdzenie czy zniknęła ze starego oddziału i pojawiła się na nowym
+    - Testy akceptacyjne - wykonywane przez potencjonalnych użytkowników/ administratorów (zachowanie aplikacji na serwerach), skupiają się na odczuciach dotyczących systemu (nie tylko na funkcjonalności ale też na niefunkcjonalności np. położenie przycisków, ich nazwenictwo itd.). Potwierdzenie przez klienta, że to jest to czego oczekiwał.
