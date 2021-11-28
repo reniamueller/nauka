@@ -1,6 +1,6 @@
 Poziomy testów:
 	- Testy modułowe (jednostkowe) - najczęściej pisane przez dewelopera, wykonywane są na najmniejszych częściach aplikacji (np. funkcjach), które są niezależne, można je wykonywać w izolacji (nie muszę mieć uruchomionej aplkacji, żeby wykonać test).
-	- Testy integracyjne - testujemy zależności między modułami (funkcjami), wiele moduló (funkcji) musi wykonac dodatkowe akcje, są bardziej skomplikowane niż modułowe, sprawdzmy skrajne przypadki funkcjonalności (np. otwieram 10 zkładek z UPC i w każdej chcę zapłacić za tę samą fakturę, czy pozowoli czy nie)
+	- Testy integracyjne - testujemy zależności między modułami (funkcjami), wiele modułów (funkcji) musi wykonać dodatkowe akcje, są bardziej skomplikowane niż modułowe, sprawdzamy skrajne przypadki funkcjonalności (np. otwieram 10 zakładek z UPC i w każdej chcę zapłacić za tę samą fakturę, czy pozwoli czy nie)
 		- przykłady: 
 		- wysyłanie SMS'ów z kodem do zalogowania się do banku - mam aplikację do banku (testuję funkcjonalność logowania), wpisuję użytkownia i hasło, (aplikacja bankowa łączy się aplikacją np. orange), oragne wysyła SMS na numer telefonu, ja SMS przepisuję i udaje mi się poprawnie zalogować.
 		- kalkulator: mamy 3 funkcje: wybieranie liczb, wybieranie działania, wyświetlenie wyniku, każda z nich jest osobną funkcją ale razem wykonują skomplikowane działanie nie sprawdzając reszty funkjonalności (np. zalogowanie/wylogowanie się do kalkulatora)
