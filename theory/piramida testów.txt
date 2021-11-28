@@ -1,0 +1,11 @@
+Piramida testów przedstawia zależnośc pomiędzy ilością a poziomem testów.
+
+Piramida testów (od dołu)
+	- testy modułowe (unit testy) - są najszybsze i najtańsze, powinno być ich najwięcej. W przypadku wykrycia bug'a są najtańsze do naprawy.
+	- testy integracyjne - powinno być ich mniej niż unit testów, ponieważ koszt przeprowadzenia testu jest większy niż unit testu.
+	- testy E2E (systemowe + akceptacyjne) - powinno być ich najmniej, bo koszt przeprowadzenie testu jest najdrożdzy i najbardziej czasochłonny z uwagi na to, że sprawdza działanie sytemu bardzo szeroko (zalogowanie --> akcja --> wylogowanie)
+	
+Możliwe konfiguracje piramidy testów:
+- poprawna piramida testów
+- odwrócona piramida testów (najwięcej E2E, najmniej unit testów)
+- klepsydra testów (najwięcej E2E i unit testów, najmniej integracyjnych)
