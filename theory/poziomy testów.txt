@@ -3,7 +3,7 @@ Poziomy testów:
 	- Testy integracyjne - testujemy zależności między modułami (funkcjami), wiele modułów (funkcji) musi wykonać dodatkowe akcje, są bardziej skomplikowane niż modułowe, sprawdzamy skrajne przypadki funkcjonalności (np. otwieram 10 zakładek z UPC i w każdej chcę zapłacić za tę samą fakturę, czy pozwoli czy nie)
 		- przykłady: 
 		- wysyłanie SMS'ów z kodem do zalogowania się do banku - mam aplikację do banku (testuję funkcjonalność logowania), wpisuję użytkownika i hasło, (aplikacja bankowa łączy się aplikacją np. orange), orange wysyła SMS na numer telefonu, ja SMS przepisuję i udaje mi się poprawnie zalogować.
-		- kalkulator: mamy 3 funkcje: wybieranie liczb, wybieranie działania, wyświetlenie wyniku, każda z nich jest osobną funkcją ale razem wykonują skomplikowane działanie nie sprawdzając reszty funkjonalności (np. zalogowanie/wylogowanie się do kalkulatora)
+		- kalkulator: mamy 3 funkcje: wybieranie liczb, wybieranie działania, wyświetlenie wyniku, każda z nich jest osobną funkcją, ale razem wykonują skomplikowane działanie nie sprawdzając reszty funkjonalności (np. zalogowanie/wylogowanie się do kalkulatora)
 		- NAVI - wprowadzenie klienta i wystawienie WZW - sprawdzamy czy na WZW są dane klienta, nie sprawdzamy np. możliwości zalogowania do NAVI
     - Testy systemowe - wykonywane przez niezależnych ludzi, zajmują się zachowaniem systemu lub produktu, zawierają wymagania biznesowe, sprawdzamy realne przypadki użycia
 		- przykłady:
