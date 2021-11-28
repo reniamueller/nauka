@@ -1,0 +1,12 @@
+Poziomy testów:
+	- Testy modułowe (jednostkowe) - najczęściej pisane przez dewelopera, wykonywane są na najmniejszych częściach aplikacji (np. funkcjach), które są niezależne, można je wykonywać w izolacji (nie muszę mieć uruchomionej aplkacji, żeby wykonać test).
+	- Testy integracyjne - testujemy zależności między modułami (funkcjami), wiele modułów (funkcji) musi wykonać dodatkowe akcje, są bardziej skomplikowane niż modułowe, sprawdzamy skrajne przypadki funkcjonalności (np. otwieram 10 zakładek z UPC i w każdej chcę zapłacić za tę samą fakturę, czy pozwoli czy nie)
+		- przykłady: 
+		- wysyłanie SMS'ów z kodem do zalogowania się do banku - mam aplikację do banku (testuję funkcjonalność logowania), wpisuję użytkownika i hasło, (aplikacja bankowa łączy się aplikacją np. orange), orange wysyła SMS na numer telefonu, ja SMS przepisuję i udaje mi się poprawnie zalogować.
+		- kalkulator: mamy 3 funkcje: wybieranie liczb, wybieranie działania, wyświetlenie wyniku, każda z nich jest osobną funkcją, ale razem wykonują skomplikowane działanie nie sprawdzając reszty funkjonalności (np. zalogowanie/wylogowanie się do kalkulatora)
+		- NAVI - wprowadzenie klienta i wystawienie WZW - sprawdzamy czy na WZW są dane klienta, nie sprawdzamy np. możliwości zalogowania do NAVI
+    - Testy systemowe - wykonywane przez niezależnych ludzi, zajmują się zachowaniem systemu lub produktu, zawierają wymagania biznesowe, sprawdzamy realne przypadki użycia
+		- przykłady:
+			- UPC - zakładamy użytkownika, logujemy się na niego, UPC wystawiło fakturę, klikamy w płatności, przekierowuje nas na: blumedia--> bank--> blumedia oczekuje na informację o płatności --> powrót do strony UPC, użytkownik widzi informację o zapłaconej fakturze i wylogowujemy użytkownika.
+			- NAVI - MMN, logowanie do NAVI, przesunięcie maszyny na nowy oddział, przelogowanie na nowy oddział, przyjęcie maszyny, sprawdzenie czy zniknęła ze starego oddziału i pojawiła się na nowym
+    - Testy akceptacyjne - wykonywane przez potencjonalnych użytkowników/ administratorów (zachowanie aplikacji na serwerach), skupiają się na odczuciach dotyczących systemu (nie tylko na funkcjonalności ale też na niefunkcjonalności np. położenie przycisków, ich nazwenictwo itd.). Potwierdzenie przez klienta, że to jest to czego oczekiwał.
