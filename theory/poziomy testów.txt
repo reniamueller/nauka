@@ -4,7 +4,7 @@ Poziomy testów:
 		- przykłady: 
 		- wysyłanie SMS'ów z kodem do zalogowania się do banku - mam aplikację do banku (testuję funkcjonalność logowania), wpisuję użytkownia i hasło, (aplikacja bankowa łączy się aplikacją np. orange), oragne wysyła SMS na numer telefonu, ja SMS przepisuję i udaje mi się poprawnie zalogować.
 		- kalkulator: mamy 3 funkcje: wybieranie liczb, wybieranie działania, wyświetlenie wyniku, każda z nich jest osobną funkcją ale razem wykonują skomplikowane działanie nie sprawdzając reszty funkjonalności (np. zalogowanie/wylogowanie się do kalkulatora)
-		-NAVI - wprowadzenie klienta i wystawienie WZW - sprawdzamy czy na WZW są dane klienta, nie sprawdzamy np. możliwości zalogowania do NAVI
+		- NAVI - wprowadzenie klienta i wystawienie WZW - sprawdzamy czy na WZW są dane klienta, nie sprawdzamy np. możliwości zalogowania do NAVI
     - Testy systemowe - wykonywane przez niezlaeźnych ludzi, zajmują się zachowaniem systemu lub produktu, zawirają wymagania biznesowe, sprawdzamy realne przypaki użycia
 		- przykłady:
 			- UPC - zakłdamy użytkownika, logujemy się na niego, UPC wystawiło fakturę, klikamy w płatności, przekerowuje nas na: blumedia--> bank--> blumedia oczekuje na informację o płatności --> powrót do strony UPC, użytkownik widzi informację o zapłaconej fakturze i wylogowujemy użytkownika.
