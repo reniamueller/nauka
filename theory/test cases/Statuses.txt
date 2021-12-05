@@ -4,4 +4,4 @@
 4. Rework --> opracowywany ponownie - przeglądany i poprawniany (np. może brakować kroków, mogą być literówki itp.)
 5. Obsolete (obsolit)--> nieważny, przedawniony - np. jak jakaś funkcjonalność została usnunięta, albo nie obowiązuje na jakimś środowisku (np. tesowe i produkcyjne, na testowym jest włączona dana funkcjonalność a na produkcyjnym nie)
 6. Future --> przyszłość - napisany test case do przyszłej funkjonalności
-7. Final --> finalny -gotowy do wykonania
+7. Final --> finalny - gotowy do wykonania
