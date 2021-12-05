@@ -1,0 +1,5 @@
+How to install TestLink:
+1. go to: https://bitnami.com/stack/testlink/cloud?utm_source=bitnami&utm_medium=installer&utm_campaign=testlink
+	download TestLink for Windows
+2. launch downloaded file and go through installation
+3. go to: http://127.0.0.1/testlink/index.php

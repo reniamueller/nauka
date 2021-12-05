@@ -1,0 +1,18 @@
+Title: Test report from test cases exported at 05.12.2021
+Test cases source: TC_test_spec-2021-12-05.doc
+Application address: http://automationpractice.com
+Executed tests: manual
+Executed tests by: Renata Mueller, Artur Mueller
+Tests executed on: 04-05.12.2021
+Environment: Windows 10 Home x64, v. 20H2, compilation:	19042.1387; Google Chrome v. 96.0.4664.45 (x64)
+Tools: TestLink, Google Chrome, Notepad++, Sourcetree
+Bugs: no bugs found
+Statistics: 5 tests executed, 5 tests passed, 0 tests failed
+Application elements that have been tested: account create, cart operations
+Summary: Test cases were executed successfully. Two UI issues have been found: 
+	1. Address format is in red color
+		Description: In account creation address format is below the field and it is in red format, which should be grey, because red is a color of an error.
+		Priority: low
+	2. Error about at least one phone number looks like error to the field above.
+		Description: In account creation, information about "...at least one phone number" is below Additional information, and it should be grey, because red is a color of an error.
+		Priority: low
