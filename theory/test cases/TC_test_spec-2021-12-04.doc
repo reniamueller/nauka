@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testspec Learning test cases</title>
+<link type="text/css" rel="stylesheet" href="http://127.0.0.1/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width=231 height=56 src="http://127.0.0.1/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Learning test cases</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 12/04/2021</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.User account operations</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc6">TC-2: Create an account with valid email address</a></p><p style="padding-left: 45px;"><a href="#toc_tc15">TC-3: Create an account with invalid e-mail address</a></p><p style="padding-left: 45px;"><a href="#toc_tc28">TC-5: Create an account without e-mail address</a></p></div><h1 class="doclevel" >Scope</h1>
+<div class="txtlevel"><p>Testing&nbsp;</p>
+
+<p><a href="http://automationpractice.com/index.php" target="_blank">http://automationpractice.com</a></p>
+
+<p>&nbsp;</p></div>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1.Test Suite : User account operations</h1>
+<a name="toc_tc6"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case TC-2: Create an account with valid email address&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">user</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Create test user account and check if it is automatically logged in.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><ol>
+	<li>e-mail address exists</li>
+</ol>
+</td></tr><tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>go to:&nbsp;</p>
+
+<p><a href="http://automationpractice.com/index.php" target="_blank">http://automationpractice.com/index.php</a></p>
+</td><td><p>website is working</p>
+</td></tr><tr><td width="5">2</td><td><p>click on &quot;Sign in&quot;</p>
+</td><td><p>&quot;authentication&quot; page is visible</p>
+</td></tr><tr><td width="5">3</td><td><p>enter valid e-mail address in &quot;Create an account&quot; form</p>
+</td><td><p>e-mail field is green</p>
+</td></tr><tr><td width="5">4</td><td><p>click on &quot;Create an account&quot;</p>
+</td><td><p>&quot;create an account&quot; page is visible&nbsp;</p>
+</td></tr><tr><td width="5">5</td><td><p>fill all mandatory fields with valid informations</p>
+</td><td></td></tr><tr><td width="5">6</td><td><p>click on &quot;Register&quot;</p>
+</td><td><p>&quot;my account&quot; page is visible</p>
+
+<p>logged in as new user</p>
+
+<p>&nbsp;</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc15"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case TC-3: Create an account with invalid e-mail address&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">user</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>go to:&nbsp;</p>
+
+<p><a href="http://automationpractice.com/index.php" target="_blank">http://automationpractice.com/index.php</a></p>
+</td><td><p>main page is visible</p>
+</td></tr><tr><td width="5">2</td><td><p>click on &quot;Sign in&quot;</p>
+</td><td><p>&quot;Autentication&quot; page is visible</p>
+</td></tr><tr><td width="5">3</td><td><p>enter in &quot;Email address&quot; email without &quot;@&quot;</p>
+</td><td></td></tr><tr><td width="5">4</td><td><p>click on &quot;Create an account&quot;</p>
+</td><td><p>Information about error:</p>
+
+<p>invalid email address</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Low</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc28"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case TC-5: Create an account without e-mail address&nbsp;<span style="font-size: 80%;">[Version : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">user</td></tr>
+<tr><td><span class="label">#:</span></td><td><span class="label">Step actions:</span></td><td><span class="label">Expected Results:</span></td></tr><tr><td width="5">1</td><td><p>go to:&nbsp;</p>
+
+<p><a href="http://automationpractice.com/index.php" target="_blank">http://automationpractice.com/index.php</a></p>
+</td><td><p>main page is visible</p>
+</td></tr><tr><td width="5">2</td><td><p>click on &quot;Sign in&quot;</p>
+</td><td><p>&quot;Autentication&quot; page is visible</p>
+</td></tr><tr><td width="5">3</td><td><p>do not enter anything&nbsp;in &quot;Email address&quot;</p>
+</td><td></td></tr><tr><td width="5">4</td><td><p>click on &quot;Create an account&quot;</p>
+</td><td><p>Information about error:</p>
+
+<p>invalid email address</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Low</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+
+</body>
+</html>

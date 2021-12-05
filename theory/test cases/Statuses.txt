@@ -1,0 +1,7 @@
+1. Draft --> szkic - test case jest w trakcie pisania np. posiada tylko tytuł
+2. Ready to review --> gotowe do przejrzenia - tzn., że jest napisany i inna osoba sprawdza, czy on jest ok
+3. Review in progress --> w trakcie sprawdzania
+4. Rework --> opracowywany ponownie - przeglądany i poprawniany (np. może brakować kroków, mogą być literówki itp.)
+5. Obsolete (obsolit)--> nieważny, przedawniony - np. jak jakaś funkcjonalność została usnunięta, albo nie obowiązuje na jakimś środowisku (np. tesowe i produkcyjne, na testowym jest włączona dana funkcjonalność a na produkcyjnym nie)
+6. Future --> przyszłość - napisany test case do przyszłej funkjonalności
+7. Final --> finalny -gotowy do wykonania
