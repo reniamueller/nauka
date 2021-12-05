@@ -1,0 +1,12 @@
+Title: Sorting by price is not working
+Environment: http://automationpractice.com/index.php?controller=best-sales
+			Google Chrome 96.0.4664.45
+Severity: High
+Priority: Low
+Description: Sorting on best sellers page is not working, severity is high because it is very often used by clients.
+Author: Renata Mueller
+Steps to reproduce:
+	1. Go to: http://automationpractice.com/index.php?controller=best-sales
+	2. Select from "sort by" dropdown: "Price: Lowest first"
+Actual result: the price is sorted from highest to lowest
+Expected result: the price is sorted from lowest to highest

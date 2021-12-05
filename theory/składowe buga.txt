@@ -1,0 +1,21 @@
+Na buga składa się:
+UI:
+	- tytuł
+	- severity - częstość występowania np. za każdym logowaniem --> critical, podsumowanie roczne --> low
+	- priority - ważność np. literówka --> low, logowanie kończy się białym ekranem --> critical (high)
+	bug blocker --> np. NAVI --> "pusty" przycisk księguj w księgowaniu WZW uniemożliwia wynajem sprzętu.
+	- opis --> krótkie streszczenie na temat tego co się stało - rozwinięcie tytułu
+	- środowisko
+	- imię i nazwisko zgłaszajcego
+	- zrzuty ekranu/gif/filmik
+	- kroki do reprodukcji
+	- rezultat aktualny (bug)
+	- rezultat oczekiwany (poprawne zachowanie funkcjonalności)
+	- logi aplikacji (jeżeli dostępne)
+	
+REST:
+	- body
+	- status
+	- odpowiedź
+	- adres URL
+	- metoda (put, post itd.)
