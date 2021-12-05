@@ -3,7 +3,7 @@ Test cases source: TC_test_spec-2021-12-05.doc
 Application address: http://automationpractice.com
 Executed tests: manual
 Executed tests by: Renata Mueller, Artur Mueller
-Tests exported on: 04-05.12.2021
+Tests executed on: 04-05.12.2021
 Environment: Windows 10 Home x64, v. 20H2, compilation:	19042.1387; Google Chrome v. 96.0.4664.45 (x64)
 Tools: TestLink, Google Chrome, Notepad++, Sourcetree
 Bugs: no bugs found
