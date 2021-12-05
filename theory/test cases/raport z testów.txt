@@ -3,7 +3,7 @@ Raport z testów - podumowanie, dokument opisujący przebieg testów i ich wykon
 Raport z testów zawiera:
 	- tytuł
 	- nazwę i adres internetowy aplikacji
-	- rodzaje przeprowdzonych testów (różne poziomy, różne typy np. automatyczne restowe, manualne niefunkcjonalne, manualne funkcjonalne, systemowe, akceptacyjne, raczej bez unit testów)
+	- rodzaje przeprowadzonych testów (różne poziomy, różne typy np. automatyczne restowe, manualne niefunkcjonalne, manualne funkcjonalne, systemowe, akceptacyjne, raczej bez unit testów)
 	- QA, którzy wykonywali testy
 	- data i godzina wykonania testów
 	- środowsko (np. nazwa systemu operacyjnego, przeglądarka, specyfikacja serwera)
