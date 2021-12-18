@@ -9,7 +9,7 @@ Przykładowa historyjka/ scenariusz:
 	I want add product to cart, 
 	So that I can see this in cart.
 	
-Scenario: add product to cart
+Scenario: Add product to cart
 	Given I'm client
 	When I add product to cart
 	Then I can see this in cart
