@@ -15,5 +15,5 @@ Scenario: Add product to cart
 	Then I can see this in cart
 	
 Jest parę technik pisania scenariuszy:
-- "klikanie" po konkretnych elemeantach na stronie - "When I click on Add to cart";
+- "klikanie" po konkretnych elementach na stronie - "When I click on Add to cart";
 - odpowiedzialność za kliknięcie w konkrentny przycisk spoczywa na wykonującym sccenariusz - "When I add product to cart".
