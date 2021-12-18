@@ -10,9 +10,9 @@ Przykładowa historyjka/ scenariusz:
 	So that I can see this in cart.
 	
 Scenario: add product to cart
-	Given I'm client, 
-	When I add product to cart, 
-	Then I can see this in cart.
+	Given I'm client
+	When I add product to cart
+	Then I can see this in cart
 	
 Jest parę technik pisania scenariuszy:
 - "klikanie" po konkretnych elemeantach na stronie - "When I click on Add to cart";
