@@ -1,6 +1,6 @@
 TDD - Test Driven Development polega na tym, że najpierw pisane sa testy na podstawie wymagań/ specyfikacji, a następnie pisze się oprogramowanie, tak żeby te testy przechodziły.
 
-BDD - Behaviour Driven Develepment polaega na tworzeniu oprogramowania przez opisywanie zachowania danych funkcjonalności.
+BDD - Behaviour Driven Development polega na tworzeniu oprogramowania przez opisywanie zachowania danych funkcjonalności.
 Przybiera dwie formy:
 	- As a ..., I want ..., so that... (Jako (rola)..., chcę (funkcja)..., by (korzyść)...)
 	- (Gherkin) Given ..., when ..., then ... (Zakładając, że ..., jeśli ..., to (wtedy)...)
