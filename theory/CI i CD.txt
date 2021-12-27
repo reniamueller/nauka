@@ -17,5 +17,5 @@ Jenkins składa się z jobów, które mają następujące triggery (czyli jak mo
 	- po innym jobie
 	- z GITa (zmiana na repo)
 	
-Różnica między jobem a buildem - job skłąda się z buildów, jedno wykonanie joba to kolejny build. 
+Różnica między jobem a buildem - job składa się z buildów, jedno wykonanie joba to kolejny build. 
 	
