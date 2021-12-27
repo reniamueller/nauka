@@ -1,0 +1,21 @@
+CI - Continuous Integration (Ciągła Integracja) - praktyka wytwarzania oprogramowania polegająca na automatycznym łączeniu, integrowaniu i testowaniu wszystkich zmian w oprogramowaniu w momencie ich wprowadzania.
+Ciągła Integracja polega na puszczaniu wszystkich testów automatycznych oraz na testowaniu manualnym zmian w aplikacji, a po sukcesie wszystkich testów następuje merge do developa. Cały czas znamy stan aplikacji.
+(przypadek gotowania zupy - dodawanie elementów i sprawdzanie czy zupa jest nadal dobra)
+
+CD - Continuous Deployment - praktyka polegająca na ciągłym deployowaniu (instalowaniu) nowej wersji aplikacji na środowisku. 
+
+Jednym z narzędzi do CI i CD jest Jenkins.
+
+Jenkins potrafi:
+	- puszczać testy automatyczne (unit testy, integracyjne i inne)
+	- sprawdzać stan działania aplikacji (czy aplikacja na danym środowisku działa)
+	- deployować aplikację
+	
+Jenkins składa się z jobów, które mają następujące triggery (czyli jak mogę odpalić joba):
+	- manualny
+	- o określonej porze (czasowy)
+	- po innym jobie
+	- z GITa (zmiana na repo)
+	
+Różnica między jobem a buildem - job składa się z buildów, jedno wykonanie joba to kolejny build. 
+	
