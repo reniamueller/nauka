@@ -2,7 +2,7 @@ CI - Continuous Integration (Ciągła Integracja) - praktyka wytwarzania oprogra
 Ciągła Integracja polega na puszczaniu wszystkich testów automatycznych oraz na testowaniu manualnym zmian w aplikacji, a po sukcesie wszystkich testów następuje merge do developa. Cały czas znamy stan aplikacji.
 (przypadek gotowania zupy - dodawanie elementów i sprawdzanie czy zupa jest nadal dobra)
 
-CD - Continuous Deployment - praktyka polagająca na ciągłym deployowaniu (instalowaniu) nowej wersji aplikacji na środowisku. 
+CD - Continuous Deployment - praktyka polegająca na ciągłym deployowaniu (instalowaniu) nowej wersji aplikacji na środowisku. 
 
 Jednym z narzędzi do CI i CD jest Jenkins.
 
