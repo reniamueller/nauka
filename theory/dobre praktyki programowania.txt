@@ -1,7 +1,7 @@
 KISS - (Keep It Simple, Stupid) - kod powinien być zrozumiały dla każdego, bez zbędnego gmatwania logiki
 
 DRY - (Don't Repeat Yourself) - nie duplikujemy naszego kodu, tylko staramy się, aby poszczególne jego części były jak najbardziej reużywalne. 
-Wiżąe się ona z Zasadą Trzech (Rule of three).
+Wiąże się ona z Zasadą Trzech (Rule of three).
 
 Zasada trzech (Rule of three) - jeżeli w trzech miejscach mamy powtórzony kod należy zastosować zasadę DRY.
 
