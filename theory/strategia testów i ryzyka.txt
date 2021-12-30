@@ -1,0 +1,13 @@
+Strategia testów to dokument opisujący metodykę testowania w projekcie/ organizacji - ogólna procedura opisująca kto, jak, gdzie i czym (narzędzia) będzie testować.
+(metodyka - zbiór zasad dotyczących wykonania jakiejś pracy.)
+
+W strategii testów wyróżniamy 2 typy ryzyk:
+	1. Ryzyko projektowe:
+		- braki w umiejętnościach lub personelu
+		- problemy ze zdefiniowaniem poprawnych wymagań np. notka z samym tytułem, niemożność ściągnięcia wymagań od klienta
+		- niska jakość kodu aplikacji
+		- problemy z dostawcami np. zewnętrzny serwis np. bluemedia
+	2. Ryzyko produktowe:
+		- możliwość wyrządzenia szkody człowiekowi lub firmie np. oprogramowanie medyczne lub bankowe
+		- w momencie otrzymania starej aplikacji coś nie działa tak jak powinno
+
