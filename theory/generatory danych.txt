@@ -1,0 +1,9 @@
+Mock - zastąpienie działającej funkcjonalności jakąś zaślepką 
+ - zamokowanie aplikacji po zalogowaniu polega na tym, że jak się poprawnie zaloguję na obojętnie jakiego użytkownika to zawsze dostanę taki sam ekran np. sam tekst "witaj w aplikacji"
+ 
+Mockować można:
+	- ekrany
+	- odpowiedzi z serwera- API, tzn. możemy wysłać zapytanie i zawsze dostaniemy poprawną odpowiedź
+	- dane np. mockaroo
+	
+Mockowanie wyglądu ekranu nazywa się mockup'em, np. rysowanie ekranu w pait'cie to mockowanie ale gotowy szkic to mockup.

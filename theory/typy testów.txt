@@ -1,0 +1,19 @@
+Typy testów:
+	- funkcjonalne (czarnoskrzynkowe)- nie korzystamy z kodu, sprawdzają daną funkcjonalność
+	- niefunkcjonalne- sprawdzają jak a nie czy działa funkcjonalność lub system np. ustawienia dla niedowidzących, performance - jak szybko działa
+	- retesty/regresja
+		- retest - powtórzenie danego testu lub testu dla danej funkcjonalności
+		- regeresja- powtórzenie wszystkich testów dla całej aplikacji, w celu sprawdzenia czy aktualne zmiany nie wprowadzają błędu gdzie indziej
+	- białoskrzynkowe (strukturalne)- badają kod 
+		- analiza statyczna kodu - CR'ka
+		- unit testów- piszemy funkcjonalność, do niej napisane są testy i jedna z technik mówi o tym ile procent funkcjonalności pokryta jest przez testy.
+		
+Wszystkie typy testów mogą być wykonywane na wszystkich poziomach testów. 
+
+Każdy typ testów można wykonać:
+	- manualnie
+	- automatycznie
+	
+Monkey testing - test symulujący użytkownika nieznającego aplikacji oraz domeny.
+
+Smoke testing - test symulujący użytkownika znającego aplikację oraz domenę.

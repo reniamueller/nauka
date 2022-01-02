@@ -7,5 +7,5 @@ Zasada trzech (Rule of three) - jeżeli w trzech miejscach mamy powtórzony kod 
 
 Zasada Skauta - jeżeli w pobliżu mojego kodu jest inny wadliwy kod to go naprawiam.
 
-YAGNI - (You Ain't Gonna Need It) - nie piszemy kodu do przodu, nie przewidujmey wymagań podczas pisania kodu.
+YAGNI - (You Ain't Gonna Need It) - nie piszemy kodu do przodu, nie przewidujemy wymagań podczas pisania kodu.
 

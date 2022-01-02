@@ -1,0 +1,34 @@
+Interfejs - to określenie jak coś się zachowuje i jaką ma strukturę oraz z czego się składa np. interfejsem może być port USB, albo gniazdko elektryczne, ponieważ do portu USB wepniemy tylko wtyczki USB i one mogą ładować lub przesyłać dane a gniazdko elektryczne tylko daje prąd. 
+
+API - to taki interfejs, który komunikuje się pomiędzy użytkownikiem a bazą danych. Jednym z rodzajów API jest REST.
+
+REST API - ustandaryzowany interfejs wykorzystujący metody HTTP. 
+
+Encja - jakaś dana lub zbiór danych określająca dany obiekt. Encja to np. osoba, którą opisujemy za pomocą imienia, nazwiska, PESEL'u, wzrostu, wagi. Tabela w bazie danych trzyma poszczególne encje, a kolumny w bazie są jej danymi, np. tabela z osobami, tabela z samochodami, tabela z domami. 
+
+Metody HTTP:
+	- POST - dodaje nową encję
+	- GET - pobiera daną encję
+	- PUT - aktualizuje daną encję
+	- DELETE - usuwa daną encję
+	- PATCH* - aktualizuje tylko część encji np. tylko numer rejestracyjny samochodu
+	
+Formaty danych REST API:
+	- JSON:
+		{
+			name: "Jan Kowalski",
+			age: "36"
+		}
+	
+	- XML:
+		<person>
+			<name>Jan Kowalski</name>
+			<age>36</age>
+		</person>
+		
+Statusy odpowiedzi z serwera:
+	- 1XX - informacyjne
+	- 2XX - powodzenie realizacji
+	- 3XX - przekierowania
+	- 4XX - błąd po stronie klienta
+	- 5XX - błąd po stronie serwera 
