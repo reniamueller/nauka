@@ -1,0 +1,169 @@
+{
+  "id": "4f4f5a98-52f8-403a-ba9d-3c7b56b95700",
+  "version": "2.0",
+  "name": "TestLink test cases automated",
+  "url": "http://automationpractice.com",
+  "tests": [{
+    "id": "a11785b2-7613-420e-af6e-b6e6e28b60ce",
+    "name": "TC-6 : Add product to cart",
+    "commands": [{
+      "id": "bdf2ede0-950c-4e3e-b380-b285f36af35b",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6322c3a-e608-450f-9067-a81037b40d55",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1100x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "292381d9-127d-40aa-a701-2484a46aaaa5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Blouse']",
+      "targets": [
+        ["css=.hovered .replace-2x", "css:finder"],
+        ["xpath=//img[@alt='Blouse']", "xpath:img"],
+        ["xpath=//ul[@id='homefeatured']/li[2]/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//li[2]/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87a9c4cb-d0f2-4109-999d-1b58e28efeed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exclusive > span",
+      "targets": [
+        ["css=.exclusive > span", "css:finder"],
+        ["xpath=//p[@id='add_to_cart']/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6022e865-f18c-4656-876b-989fa979dc3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.continue > span",
+      "targets": [
+        ["css=.continue > span", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div[2]/div[4]/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee92a982-c44c-4233-b64e-e089802467e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ajax_cart_quantity",
+      "targets": [
+        ["css=.ajax_cart_product_txt:nth-child(3)", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[3]/div/a/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Product')]", "xpath:innerText"]
+      ],
+      "value": "1"
+    }, {
+      "id": "686b4313-dbdf-4a76-b2bf-66fa6e895c99",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ajax_cart_product_txt",
+      "targets": [
+        ["css=.ajax_cart_product_txt:nth-child(3)", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[3]/div/a/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Product')]", "xpath:innerText"]
+      ],
+      "value": "Product"
+    }, {
+      "id": "c2dfcdd9-2770-4acd-81d0-934bbc35cba7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.shopping_cart > a",
+      "targets": [
+        ["css=.shopping_cart > a", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=order']", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dfec05d-0f42-489d-a87a-611d5710fa7a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//img[@alt='Blouse']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "66343fa1-25a9-4c95-a6a7-9fdb609944a5",
+    "name": "TC-7 : Remove product from cart ",
+    "commands": [{
+      "id": "cca6afe9-3339-42b8-b72b-274a9653e04c",
+      "comment": "",
+      "command": "open",
+      "target": "/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7cb9e9a8-1f23-4c90-b572-c8bb32d296ed",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1100x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55565b73-01e3-4e35-8dd1-38de54ce6d85",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.shopping_cart > a",
+      "targets": [
+        ["css=.shopping_cart > a", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=order']", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "930bce5a-97e4-4617-aeac-f3bf80c9c4a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax_cart_block_remove_link",
+      "targets": [
+        ["css=b", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[3]/div/a/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d1cd07e-2c31-4ad0-96ba-c7d851c33b40",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//b[contains(.,'Cart')]",
+      "targets": [],
+      "value": "Cart"
+    }, {
+      "id": "16da13d4-88f4-4047-90d7-cd1819a68a4c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ajax_cart_no_product",
+      "targets": [],
+      "value": "(empty)"
+    }]
+  }],
+  "suites": [{
+    "id": "6d452030-06f5-4e5b-96f8-ac377b742742",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://automationpractice.com/"],
+  "plugins": []
+}
