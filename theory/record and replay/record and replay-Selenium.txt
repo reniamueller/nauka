@@ -1,0 +1,32 @@
+Instalacja ze strony: https://www.selenium.dev/selenium-ide/
+Strona testowanej aplikacji: http://automationpractice.com/index.php
+
+Asercja (assert) - porównanie dwóch wartości
+
+Przykładowe drzewko DOM (rysunek):
+<div>
+	<li>
+		<div class="right">
+		<div class="left">
+	</li>
+	<li>
+		<div class="right">
+		<div class="left">
+	</li>
+</div>
+
+Wady Selenium IDE:
+- nie nagrywa akcji hover, można ją dodać ale tylko ręcznie
+- każdy test case wykonywany jest w osobnym oknie
+- (wado-zaleta) wadą jest to, że w przypadku nieznalezienia danego selektora szuka innego po proponowanych i może kliknąć zupełnie coś innego; zaleta jest taka, że jeżeli użyjemy sektora, który się powiela to użycie proponowanych może kliknąć w to co chcemy
+
+Zalety Selenium IDE:
+- nagrywanie scenariuszy jest łatwe
+- intuicyjny interfejs
+- ma mnóstwo opcji do asercji i zachowania użytkownika na stronie
+
+Różnica między xpath a css:
+	- xpath (xpath=//header[@id='header']/div[3]/div/div/div[3]/div/a) - słaba czytelność i utrzymywanie na dynamicznych stronach, na plus - możliwość szukania po tekście (xpath=//b[contains(.,'Cart')])
+	- css (css=.shopping_cart > a) - lepsza czytelność i utrzymywanie, łatwe znajdowanie selektorów z klasami
+	
+Testy automatyczne powinny być niezależne tzn., wykonanie drugiego testu nie może być zależne od powodzenia pierwszego testu. 
