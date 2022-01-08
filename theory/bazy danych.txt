@@ -1,0 +1,63 @@
+Bazy danych dzielą się na co najmniej 2 typy:
+	1. Relacyjne (SQL)
+	2. Nierelacyjne (NoSQL)
+	
+Systemy relacyjnych baz danych:
+	- Oracle
+	- MySQL
+	- PostgreSQL
+	- MariaDB
+	
+Relacyjna baza danych charakteryzuje się tym, że jest połączona relacją pomiędzy poszczególnymi tabelami. Połączenia są realizowane poprzez klucze (podstawowy i obcy).
+
+Klucz podstawowy (id) - to unikalny klucz, dzięki któremu jesteśmy w stanie wyciągnąć jeden wiersz z tabeli. 
+
+Klucz obcy - to wartość klucza podstawowego zastosowanego w innej tabeli.
+
+Przykład: 
+Tabela A ma klucz główny id a tabela B ma klucz obcy w kolumnie a_id, który jest powiązany z tabelą A (kolumna id)
+
+
+Przykładowe zapytania w relacyjnej bazie danych:
+
+SELECT:
+SELECT column1, column2 FROM table_name; - wyciąga wartości z kolumny 1 i 2 z tabeli "table_name"
+SELECT * FROM table_name; - wyciąga wszystkie kolumny "table_name"
+
+
+WHERE:
+SELECT * FROM table_name WHERE name = "Renata" ; - wyciąga wartości ze wszystkich kolumn z tabeli "table_name" pofiltrowane po imieniu "Renata"
+SELECT * FROM table_name WHERE name = "Renata" AND surmane = "Mueller" ; - wyciąga wartości ze wszystkich kolumn z tabeli "table_name" pofiltrowane po imieniu "Renata" i nazwisku "Mueller"
+
+Do WHERE można dodatkowo użyć zapytania OR lub NOT.
+
+ORDER BY:
+SELECT * FROM table_name ORDER BY column1 ASC/DESC; - sortuje wyciągnięte wartości po kolumnie 1 ASC (rosnąco), DESC (malejąco), dane mogą być dowolnego typu.
+
+INSERT INTO - wstawia nowy wiersz z danymi w tabeli:
+INSERT INTO table_name (column1, column2...) VALUES (value1, value2,...) - wstawia konkretne wartości w konkretne kolumny.
+INSERT INTO table_name VALUES (value1, value2,...) - uzupełnia wszystkie kolumny po kolei konkretnymi wartościami.
+
+UPTADE -  aktualizuje istniejące wiersze w bazie:
+UPDATE table_name SET column1 = value1, column2 = value2; - aktualizuje dane w tabeli "table_name", dla kolumny 1 = value1, dla kolumny2 = value2. Zalecane jest używane WHERE, żeby nie zaktualizować wszystkich wierszy. 
+UPDATE table_name SET column1 = value1, column2 = value2 WHERE column3 = value3; - aktualizuje dane w tabeli "table_name", dla kolumny 1 = value1, dla kolumny2 = value2 gdzie wartość kolumny 3 = value3;
+UPDATE table_name SET column1 = value1, column2 = value2 WHERE NOT column3 = value3; - aktualizuje dane w tabeli "table_name", dla kolumny 1 = value1, dla kolumny2 = value2 gdzie wartość kolumny 3 jest różna od value3;
+
+DELETE:
+DELETE FROM table_name WHERE column1 = value1; - usuwa wszystkie wiersze spełniające warunek WHERE
+
+Aliasing - nazywanie kolumn lub tabel własnym nazewnictwem w danym zapytaniu:
+SELECT column_dane_personalne AS cdp FROM table_name WHERE cdp = 3 AND cdp = 2 OR cdp = 5
+
+JOIN łączy dwie lub więcej tabel poprzez relacje. 
+Główne typy JOIN'ów:
+	- INNER JOIN
+	- LEFT JOIN
+	- RIGHT JOIN
+	- FULL OUTER JOIN
+	
+
+Różnice pomiędzy relacyjną a nierelacyjną bazą danych (MongoDB - JSON):
+	- relacyjną stosujemy w przypadku gdy musimy mieć bardzo dobrą spójność bazy (konta bankowe, stany magazynowe), a nierelacyjną gdy dane pomiędzy obiektami mają znaczne różnice (przypadek miliona płci vs dwie płcie)
+	- nierelacyjną bazę danych stosujemy w bardzo obszernych systemach, które muszą wyciągać dane bardzo szybko (nierelacyjna bazy danych są szybsze od relacyjnych), w przypadku JOINA relacyjna musi przeczytać każdą tabelę, a nierelacyjna po prostu podajemy id danego obiektu
+	- relacyjna baza danych zapewnia transakcyjność zapytania podczas gdy nierelacyjna tego nie zapewnia. Transakcja - zapytanie, które się nie powiedzie np. UPDATE jest w całości wycofywane (przykład relacyjnej: robię UPDATE na milionie wierszy, zapytanie jest wykonywane wiersz po wierszu, po 4 wierszu tracę połączenie do bazy, po ponownym uzyskaniu połączenia żaden wiersz nie jest zaktualizowany, podczas gdy w nierelacyjnej podobne działanie skutkuje tym, że tylko 4 wiersze są zaktualizowane. 
