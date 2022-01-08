@@ -15,7 +15,7 @@ Klucz podstawowy (id) - to unikalny klucz, dzięki któremu jesteśmy w stanie w
 Klucz obcy - to wartość klucza podstawowego zastosowanego w innej tabeli.
 
 Przykład: 
-Tabela A ma klucz główny id a tabela B ma klucz obcy w kolumnie a_id, który jest powiązany z tabelą A (kolumna id)
+Tabela A ma klucz główny id, a tabela B ma klucz obcy w kolumnie a_id, który jest powiązany z tabelą A (kolumna id)
 
 
 Przykładowe zapytania w relacyjnej bazie danych:
