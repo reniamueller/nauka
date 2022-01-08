@@ -59,5 +59,5 @@ Główne typy JOIN'ów:
 
 Różnice pomiędzy relacyjną a nierelacyjną bazą danych (MongoDB - JSON):
 	- relacyjną stosujemy w przypadku gdy musimy mieć bardzo dobrą spójność bazy (konta bankowe, stany magazynowe), a nierelacyjną gdy dane pomiędzy obiektami mają znaczne różnice (przypadek miliona płci vs dwie płcie)
-	- nierelacyjną bazę danych stosujemy w bardzo obszernych systemach, które muszą wyciągać dane bardzo szybko (nierelacyjna bazy danych są szybsze od relacyjnych), w przypadku JOINA relacyjna musi przeczytać każdą tabelę, a nierelacyjna po prostu podajemy id danego obiektu
+	- nierelacyjną bazę danych stosujemy w bardzo obszernych systemach, które muszą wyciągać dane bardzo szybko (nierelacyjne bazy danych są szybsze od relacyjnych), w przypadku JOIN'a relacyjna musi przeczytać każdą tabelę, a w nierelacyjnej po prostu podajemy id danego obiektu
 	- relacyjna baza danych zapewnia transakcyjność zapytania podczas gdy nierelacyjna tego nie zapewnia. Transakcja - zapytanie, które się nie powiedzie np. UPDATE jest w całości wycofywane (przykład relacyjnej: robię UPDATE na milionie wierszy, zapytanie jest wykonywane wiersz po wierszu, po 4 wierszu tracę połączenie do bazy, po ponownym uzyskaniu połączenia żaden wiersz nie jest zaktualizowany, podczas gdy w nierelacyjnej podobne działanie skutkuje tym, że tylko 4 wiersze są zaktualizowane. 
