@@ -2,7 +2,7 @@ Techniki projektowania testów czarnoskrzynkowych (opartych na specyfikacji):
 	
 	- klasy równoważności - testowanie losowych wartości z tego samego przedziału dla których system zachowuje się tak samo. Może być wiele poprawnych i niepoprawnych klas równoważności.
 	Przykład: 
-		<0			0 - 499		500 - 999		1000 - 1999		2000 - 100 000		>100 000
+		<0			0 - 499			500 - 999		1000 - 1999		2000 - 100 000		>100 000
 		error		|	1%		|	2%		| 	3%		|	4%		|	error
 		niepoprawna	|	poprawna	|	poprawna	|	poprawna	|	poprawna		| niepoprawna
 	
