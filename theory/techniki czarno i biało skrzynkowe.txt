@@ -17,7 +17,7 @@ Techniki projektowania testów czarnoskrzynkowych (opartych na specyfikacji):
 		- przejście pomiędzy formatkami graficznymi, czyli do jakich ekranów mogę przejść będąc na ekranie logowania,
 		- przejście pomiędzy stanami systemu, np. naliczanie odsetek co godzinę, system o pełnej godzinie nalicza dodatkowe 2% odsetek (stan 1), a po wykonaniu czynności oczekuje na płatność (stan 2), po dokonaniu płatności odsetek już nie nalicza (stan 3).
 		
-	- w oparciu o przypadki użycia - technika polegająca na testowaniu jak najbardziej realnych przypadków, z którym do czynienia mają użytkownicy danego systemu.
+	- w oparciu o przypadki użycia - technika polegająca na testowaniu jak najbardziej realnych przypadków z którymi do czynienia mają użytkownicy danego systemu.
 	
 	
 Techniki projektowania testów białoskrzynkowych:
