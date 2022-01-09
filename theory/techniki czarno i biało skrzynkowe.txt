@@ -1,0 +1,29 @@
+Techniki projektowania testów czarnoskrzynkowych (opartych na specyfikacji):
+	
+	- klasy równoważności - testowanie losowych wartości z tego samego przedziału dla których system zachowuje się tak samo. Może być wiele poprawnych i niepoprawnych klas równoważności.
+	Przykład: 
+		<0				0 - 499		500 - 999		1000 - 1999		2000 - 100 000		>100 000
+		error		|	1%		|	2%			| 	3%			|	4%				|	error
+		niepoprawna	|	poprawna|	poprawna	|	poprawna	|	poprawna		| niepoprawna
+	
+	W przykładzie powyżej mamy 6 klas równoważności: 4 poprawne i 2 niepoprawne.
+	
+	- wartości brzegowe - testowanie polegające na sprawdzeniu wartości na granicy przedziałów, 
+	np. przedział 0 - 499 to sprawdzam wartości brzegowe tego przedziału, czyli -1,0,1 i 499,500,501
+	
+	- tablice decyzyjne - testowanie zależności logicznych systemu (akceptacja regulaminu sklepu i RODO, przez co zakupy w sklepie są możliwe). Na wyjściu takiej tablicy wartościami spodziewanymi powinna być prawda lub fałsz (Boolean).
+	
+	- przejścia między stanami:
+		- przejście pomiędzy formatkami graficznymi, czyli do jakich ekranów mogę przejść będąc na ekranie logowania,
+		- przejście pomiędzy stanami systemu, np. naliczanie odsetek co godzinę, system o pełnej godzinie nalicza dodatkowe 2% odsetek (stan 1), a po wykonaniu czynności oczekuje na płatność (stan 2), po dokonaniu płatności odsetek już nie nalicza (stan 3).
+		
+	- w oparciu o przypadki użycia - technika polegająca na testowaniu jak najbardziej realnych przypadków z którymi do czynienia mają użytkownicy danego systemu.
+	
+	
+Techniki projektowania testów białoskrzynkowych:
+	
+	- testowanie i pokrycie instrukcji - polega na zmierzeniu ile instrukcji (funkcji) zostało przetestowanych, np. kalkulator ze znakami: +, -, *, /, zostaje przetestowany tylko dla 2 znaków, 50% pokrycia instrukcji
+	
+	- testowanie i pokrycie decyzji - sprawdzanie wykonania warunków "if", dla jednego "if'a" 2 testy (z "if'em" i bez "if'a")
+	
+	- techniki oparte na strukturze - testowanie polegające na sprawdzeniu całych modułów, funkcji, klas, np. kalkulator jako moduł liczenia podatków.
