@@ -1,0 +1,17 @@
+Silos wiedzy - osoba, która wie najwięcej w danej dziedzinie. 
+Redukowanie zagrożeń związanych z silosami wiedzy:
+	- silos wiedzy przeprowadza szkolenia dla szerszego grona odbiorców
+	- spisywanie swojej wiedzy w postaci dokumentu
+	
+Kiedy testy notki (feature) można uznać za wykonane:
+- acceptance criteria są spełnione
+- jeżeli istnie strategia testów, to testy opisane w niej są wykonane
+W przypadku niemożności przetestowania danej notki (brak czasu, zblokowanie inną notką) sytuację należy zgłosić w pierwszej kolejności liderowi.
+
+Automatyczne testy REST charakteryzują się dużą szybkością, ale omijają warstwę GUI, która może być krytyczna (bardzo ważna dla klienta), testy GIU (klikanie po warstwie wizualnej aplikacji) są wolniejsze ale dokładniej sprawdzają aplikację.
+
+OWASP Top10 - 10 najważniejszych podatności security, na które narażone są aplikacje, np.
+- dostęp do wrażliwych danych przez niepowołaną osobę za pomocą podmiany lub zmiany hasła adminowi
+- wstrzyknięcie zapytania SQL poprzez adres URL
+
+Pair-programming/ pair-review - programowanie w parach/ CR'kowanie w parach

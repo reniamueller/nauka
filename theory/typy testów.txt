@@ -1,6 +1,9 @@
 Typy testów:
 	- funkcjonalne (czarnoskrzynkowe)- nie korzystamy z kodu, sprawdzają daną funkcjonalność
-	- niefunkcjonalne- sprawdzają jak a nie czy działa funkcjonalność lub system np. ustawienia dla niedowidzących, performance - jak szybko działa
+	- niefunkcjonalne- sprawdzają jak a nie czy działa funkcjonalność lub system np. 
+		- testy dostępności - ustawienia dla niedowidzących, 
+		- testy performance - wydajnościowe i obciążeniowe,
+		- testy security
 	- retesty/regresja
 		- retest - powtórzenie danego testu lub testu dla danej funkcjonalności
 		- regeresja- powtórzenie wszystkich testów dla całej aplikacji, w celu sprawdzenia czy aktualne zmiany nie wprowadzają błędu gdzie indziej
