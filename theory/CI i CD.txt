@@ -19,3 +19,4 @@ Jenkins składa się z jobów, które mają następujące triggery (czyli jak mo
 	
 Różnica między jobem a buildem - job składa się z buildów, jedno wykonanie joba to kolejny build. 
 	
+Jenkinsfile - plik konfiguracyjny dla joba. Joby mogą być konfigurowane manualnie lub przez jenkinsfile. 
