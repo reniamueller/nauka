@@ -1,0 +1,8 @@
+Zmienne w Typescrip:
+- const - stała
+- let - zmienna
+
+Typy zmiennych:
+- number - cyfra
+- string - tekst
+- boolean - true i false
